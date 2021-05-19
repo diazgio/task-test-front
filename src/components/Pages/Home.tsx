@@ -1,9 +1,13 @@
 import React from 'react';
 import IPage from '../../interfaces/page';
+import { Link } from 'react-router-dom';
 
 const HomePage: React.FunctionComponent<IPage> = props => {
   return (
-    <div>Hello this is Home</div>
+    <div>
+      <h1>Welcome to this app</h1>
+      <Link className="btn btn-primary" to="/commits">Go!</Link>
+    </div>
   );
 }
 

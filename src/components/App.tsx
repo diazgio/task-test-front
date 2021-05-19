@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, RouteComponentProps } from 'react-router-dom';
 import routes from '../config/routes';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App: React.FunctionComponent<{}> = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FunctionComponent<{}> = () => {
                 exact={route.exact}
                 render={(props: RouteComponentProps<any>) => (
                   <route.component
+                    name={route.name}
                     {...props}
                     {...route.props}
                   />
