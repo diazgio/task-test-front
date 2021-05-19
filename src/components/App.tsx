@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function App() {
+const App: React.FunctionComponent<{}> = () => {
   return (
     <div className="App">
       <h1>Hello world</h1>
