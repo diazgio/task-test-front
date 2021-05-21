@@ -51,7 +51,7 @@ const CommitsPage: React.FunctionComponent<IPage> = props => {
                 </div>
               )) : (
                 <div className="card bg-light">
-                  <h1>Something happens with the API!!</h1>
+                  <h1>Something happens with the API!, Please wait some time!</h1>
                 </div>
               )}
             </div>
@@ -64,7 +64,7 @@ const CommitsPage: React.FunctionComponent<IPage> = props => {
           <div className="card bg-light elemns-container">
             <div className="card-body">
               {!!frontendArray ? frontendArray.map((elem: any) => (
-                  <div className="border-bottom pt-2 mt-2 elem-cont">
+                  <div key={elem.commit.url} className="border-bottom pt-2 mt-2 elem-cont">
                     <div>
                       <h5 className="text-primary">Author: {elem.commit.author.name}</h5>
                       <h6 className="text-secondary">Date: {elem.commit.author.date}</h6>
@@ -75,7 +75,7 @@ const CommitsPage: React.FunctionComponent<IPage> = props => {
                   </div>
                 )) : (
                   <div className="card bg-light">
-                    <h1>Something happens with the API!!</h1>
+                    <h1>Something happens with the API!, Please wait some time!</h1>
                   </div>
                 )}
             </div>
