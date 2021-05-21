@@ -29,3 +29,36 @@ body {
   color: rgb(34, 34, 34);
   margin-bottom: 1rem;
 }
+
+.commist-container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.commits-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.commits-header h1 {
+  color: blue;
+}
+
+.commits-header p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.elemns-container {
+  height: 30rem;
+  overflow-y: auto;
+}
+
+.elem-cont {
+  padding-left: 2rem;
+}
+
+.elem-cont p {
+  font-weight: bold;
+  font-size: 20px;
+}
